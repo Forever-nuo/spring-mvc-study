@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author: Forever丶诺
@@ -21,9 +23,8 @@ import java.util.List;
 public class ValidController {
 
     @RequestMapping("/test1")
-    @ResponseBody
-    public String test1(@Valid ValidBean validBean) {
-        return "111";
+    public Map test1(@Valid ValidBean validBean, BindingResult result) {
+        return new HashMap<>();
     }
 
     @RequestMapping("/test2")
