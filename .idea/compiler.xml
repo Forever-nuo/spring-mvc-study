@@ -8,12 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-mvc-helloword" />
-        <module name="spring-mvc-study" />
+        <module name="spring-mvc-xml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-mvc-helloword" target="1.7" />
       <module name="spring-mvc-study" target="1.5" />
+      <module name="spring-mvc-xml" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
